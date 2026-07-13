@@ -64,7 +64,7 @@ const EXPERIENCES: Experience[] = [
     duration: "2.5 Hours",
     highlights: ["Secret Artist Studios", "Sacre-Coeur Private Entry", "Local Artisanal Tasting"],
     description: "Stroll through charming streets, artist squares, and historic cafés. Revisit the Golden Age of modern art, finding the footsteps of Picasso, Van Gogh, and Monet.",
-    image: "https://images.unsplash.com/photo-1598135753163-6167c1a1ad65?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.pexels.com/photos/2581155/pexels-photo-2581155.jpeg?auto=compress&cs=tinysrgb&w=800",
     priceEstimate: "From €120 / person"
   },
   {
@@ -74,7 +74,7 @@ const EXPERIENCES: Experience[] = [
     duration: "8 Hours",
     highlights: ["Private Luxury Transfer", "King's Private Apartments Access", "Fountains Musical Show"],
     description: "Visit the magnificent Palace of Versailles and its stunning gardens. Travel back to the grandeur of the Sun King with VIP entrance and private estate access.",
-    image: "https://images.unsplash.com/photo-1508189860359-777d945909ef?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=800",
     priceEstimate: "From €450 / person"
   },
   {
@@ -84,7 +84,7 @@ const EXPERIENCES: Experience[] = [
     duration: "4 Hours",
     highlights: ["Vintage Car Tour", "Michelin-starred Dining", "Champs-Élysées Sparkling Show"],
     description: "Experience the city's sparkling lights, fine dining, and romantic atmosphere. Cruise through Paris in a retro vintage Cabriolet under the golden glow of historical landmarks.",
-    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&w=800",
     priceEstimate: "From €390 / person"
   }
 ];
