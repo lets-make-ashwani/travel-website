@@ -672,7 +672,7 @@ export default function App() {
               >
                 <div className="relative h-48 w-full overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 to-transparent z-10"></div>
-                  <img src={exp.image} alt={exp.title} referrerpolicy="no-referrer" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={exp.image} alt={exp.title} referrerPolicy="no-referrer" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute top-4 left-4 z-20 bg-black/60 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/10">
                     <span className="text-[9px] font-bold tracking-widest uppercase text-white/80">{exp.category}</span>
                   </div>
