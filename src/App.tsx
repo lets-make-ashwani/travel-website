@@ -44,7 +44,7 @@ const EXPERIENCES: Experience[] = [
     duration: "2.5 Hours",
     highlights: ["Private Riva Boat", "Grand Cru Pairing", "Sunset Departure"],
     description: "Sail through the heart of Paris while admiring illuminated landmarks. Indulge in premium service with live classical melodies as Paris glows in the twilight.",
-    image: "https://images.unsplash.com/photo-1549146473-3c9617f69FC5?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1503917988258-f87a78e3c995?auto=format&fit=crop&q=80&w=800",
     priceEstimate: "From €350 / person"
   },
   {
@@ -64,7 +64,7 @@ const EXPERIENCES: Experience[] = [
     duration: "2.5 Hours",
     highlights: ["Secret Artist Studios", "Sacre-Coeur Private Entry", "Local Artisanal Tasting"],
     description: "Stroll through charming streets, artist squares, and historic cafés. Revisit the Golden Age of modern art, finding the footsteps of Picasso, Van Gogh, and Monet.",
-    image: "https://images.unsplash.com/photo-1509840144521-166f272a28b0?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=800",
     priceEstimate: "From €120 / person"
   },
   {
@@ -74,7 +74,7 @@ const EXPERIENCES: Experience[] = [
     duration: "8 Hours",
     highlights: ["Private Luxury Transfer", "King's Private Apartments Access", "Fountains Musical Show"],
     description: "Visit the magnificent Palace of Versailles and its stunning gardens. Travel back to the grandeur of the Sun King with VIP entrance and private estate access.",
-    image: "https://images.unsplash.com/photo-1524396309943-e03f5ee0563b?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1585647347483-22b66260dfff?auto=format&fit=crop&q=80&w=800",
     priceEstimate: "From €450 / person"
   },
   {
@@ -84,7 +84,7 @@ const EXPERIENCES: Experience[] = [
     duration: "4 Hours",
     highlights: ["Vintage Car Tour", "Michelin-starred Dining", "Champs-Élysées Sparkling Show"],
     description: "Experience the city's sparkling lights, fine dining, and romantic atmosphere. Cruise through Paris in a retro vintage Cabriolet under the golden glow of historical landmarks.",
-    image: "https://images.unsplash.com/photo-1499856133008-73456516e44b?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1509060464153-44667396260f?auto=format&fit=crop&q=80&w=800",
     priceEstimate: "From €390 / person"
   }
 ];
@@ -135,7 +135,7 @@ const SECTIONS = [
   { id: "section-why-us", label: "Why Us", start: 0.20, end: 0.42 },
   { id: "section-experiences", label: "Experiences", start: 0.40, end: 0.62 },
   { id: "section-testimonials", label: "Testimonials", start: 0.60, end: 0.80 },
-  { id: "section-cta", label: "Inquire", start: 0.78, end: 1.00 }
+  { id: "section-cta", label: "Inquire", start: 0.78, end: 0.92 }
 ];
 
 export default function App() {
@@ -244,7 +244,8 @@ export default function App() {
       // 3. Direct DOM update for top navigation pill states
       let activeNav = -1;
       SECTIONS.forEach((s, idx) => {
-        if (progress >= s.start && progress <= s.end) {
+        const active = (progress >= s.start && progress <= s.end) || (idx === SECTIONS.length - 1 && progress > s.end);
+        if (active) {
           activeNav = idx;
         }
       });
